@@ -1,4 +1,4 @@
-# pPrograma Somar
+# Programa Somar
 
 ## Project setup
 ```

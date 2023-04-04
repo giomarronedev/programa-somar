@@ -1,7 +1,12 @@
 # Programa Somar
 
-##Grupo Soma Tech
-###(Giovanne Marrone, Djênifer Gurskas e Giovane de Melo)
+## Grupo Soma Tech
+
+Integrantes  | Funções
+------------- | -------------
+Giovanne Marrone  | Front-end
+Djênifer Gurskas  | Back-End
+Giovane de Melo  | U.I.
 
 ## Project setup
 ```

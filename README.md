@@ -1,4 +1,7 @@
-# programa-somarrrrrrrrrrr
+# Programa Somar
+
+##Grupo Soma Tech
+###(Giovanne Marrone, Djênifer Gurskas e Giovane de Melo)
 
 ## Project setup
 ```

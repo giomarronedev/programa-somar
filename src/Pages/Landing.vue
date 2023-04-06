@@ -56,8 +56,40 @@
       </section>
     </div>
   </section>
+  <section id="ods">
+    <div class="wrapper">
+      <h2>O que são os ODS?</h2>
+      <p>
+        ODS são os Objetivos de Desenvolvimento Sustentável e os projetos do
+        Sesc e Senac visam contribuir para esses objetivos em questão resultando
+        em um impacto positivo na sociedade brasileira. Os ODS incluem
+        erradicação da pobreza, combate à fome, igualdade de gênero e muito
+        mais. Logo abaixo você pode conferir todos os 17 Objetivos de
+        Desenvolvimento Sustentável.
+      </p>
+      <div class="ods-area">
+        <ODSItem title="Erradicação da Pobreza" image="https://images.pexels.com/photos/13036063/pexels-photo-13036063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Fome zero" image="https://images.pexels.com/photos/6994962/pexels-photo-6994962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Saúde e bem-estar" image="https://images.pexels.com/photos/8460123/pexels-photo-8460123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Educação de qualidade" image="https://images.pexels.com/photos/3184644/pexels-photo-3184644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Igualdade de gênero" image="https://images.pexels.com/photos/5721337/pexels-photo-5721337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Água potável e saneamento" image="https://images.pexels.com/photos/2837863/pexels-photo-2837863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Energia limpa e acessível" image="https://images.pexels.com/photos/3651820/pexels-photo-3651820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Crescimento economico" image="https://images.pexels.com/photos/7567529/pexels-photo-7567529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Indústria, inovação e infraestrutura" image="https://images.pexels.com/photos/1716008/pexels-photo-1716008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Redução da desigualdade" image="https://images.pexels.com/photos/13798215/pexels-photo-13798215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Cidades sustentáveis" image="https://images.pexels.com/photos/2071216/pexels-photo-2071216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Consumo responsável" image="https://images.pexels.com/photos/1933386/pexels-photo-1933386.jpeg?auto=compress&cs=tinysrgb&w=1600" :numberOfProjects=8 />
+        <ODSItem title="Combate à mudança climática" image="https://images.pexels.com/photos/3044473/pexels-photo-3044473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Erradicação da Pobreza" image="https://images.pexels.com/photos/13036063/pexels-photo-13036063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Erradicação da Pobreza" image="https://images.pexels.com/photos/13036063/pexels-photo-13036063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Erradicação da Pobreza" image="https://images.pexels.com/photos/13036063/pexels-photo-13036063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem title="Erradicação da Pobreza" image="https://images.pexels.com/photos/13036063/pexels-photo-13036063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+      </div>
+    </div>
+  </section>
 </template>
-<style>
+<style scoped>
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -169,8 +201,12 @@ h1 {
 }
 
 #projects-data {
-   background: rgb(17,104,185);
-background: linear-gradient(45deg, rgb(3, 34, 63) 0%, rgba(12,77,138,1) 100%); 
+  background: rgb(17, 104, 185);
+  background: linear-gradient(
+    45deg,
+    rgb(3, 34, 63) 0%,
+    rgba(12, 77, 138, 1) 100%
+  );
   justify-content: center;
 }
 
@@ -237,9 +273,32 @@ background: linear-gradient(45deg, rgb(3, 34, 63) 0%, rgba(12,77,138,1) 100%);
   display: flex;
   background-color: var(--brand-blue);
 }
+
+#ods {
+  padding-block: 8rem;
+}
+
+#ods p {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.ods-area {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.4rem;
+}
 </style>
 <script lang="ts">
+import ODSItem from "../components/ODSItem.vue";
+
 export default {
   name: "LandingPage",
+
+  components: {
+    ODSItem,
+  },
 };
 </script>

@@ -19,7 +19,13 @@
               conferir quais ODS eles atendem.
             </p>
           </div>
-          <div class="image right-blue"></div>
+          <div class="landing-img right-blue">
+            <!-- <img src="../assets/fecomercio1.jpg" alt=""> -->
+            <video class="video" autoplay loop muted>
+              <source src="../assets/video-senac.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </section>
         <div class="institutions">
           <img src="../assets/senac-logo.svg" alt="" />
@@ -33,7 +39,9 @@
     <div class="wrapper">
       <h2>Impacto dos projetos do Senac e Sesc na sociedade</h2>
       <section class="content">
-        <div class="image left-orange"></div>
+        <div class="image left-orange">
+          <img src="../assets/fecomercio1.jpg" alt="" />
+        </div>
         <div class="text">
           <p class="content-text">
             Descrição falando sobre o fato dos projetos do Senac e do Sesc
@@ -68,27 +76,111 @@
         Desenvolvimento Sustentável.
       </p>
       <div class="ods-area">
-        <ODSItem title="Erradicação da Pobreza" image="https://images.pexels.com/photos/13036063/pexels-photo-13036063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Fome zero" image="https://images.pexels.com/photos/6994962/pexels-photo-6994962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Saúde e bem-estar" image="https://images.pexels.com/photos/8460123/pexels-photo-8460123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Educação de qualidade" image="https://images.pexels.com/photos/3184644/pexels-photo-3184644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Igualdade de gênero" image="https://images.pexels.com/photos/5721337/pexels-photo-5721337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Água potável e saneamento" image="https://images.pexels.com/photos/2837863/pexels-photo-2837863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Energia limpa e acessível" image="https://images.pexels.com/photos/3651820/pexels-photo-3651820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Crescimento economico" image="https://images.pexels.com/photos/7567529/pexels-photo-7567529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Indústria, inovação e infraestrutura" image="https://images.pexels.com/photos/1716008/pexels-photo-1716008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Redução da desigualdade" image="https://images.pexels.com/photos/13798215/pexels-photo-13798215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Cidades sustentáveis" image="https://images.pexels.com/photos/2071216/pexels-photo-2071216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Consumo responsável" image="https://images.pexels.com/photos/1933386/pexels-photo-1933386.jpeg?auto=compress&cs=tinysrgb&w=1600" :numberOfProjects=8 />
-        <ODSItem title="Combate à mudança climática" image="https://images.pexels.com/photos/3044473/pexels-photo-3044473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Erradicação da Pobreza" image="https://images.pexels.com/photos/13036063/pexels-photo-13036063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Erradicação da Pobreza" image="https://images.pexels.com/photos/13036063/pexels-photo-13036063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Erradicação da Pobreza" image="https://images.pexels.com/photos/13036063/pexels-photo-13036063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
-        <ODSItem title="Erradicação da Pobreza" image="https://images.pexels.com/photos/13036063/pexels-photo-13036063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" :numberOfProjects=8 />
+        <ODSItem
+          title="Erradicação da Pobreza"
+          image="https://images.pexels.com/photos/13036063/pexels-photo-13036063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Fome zero"
+          image="https://images.pexels.com/photos/6994962/pexels-photo-6994962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Saúde e bem-estar"
+          image="https://images.pexels.com/photos/8460123/pexels-photo-8460123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Educação de qualidade"
+          image="https://images.pexels.com/photos/3184644/pexels-photo-3184644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Igualdade de gênero"
+          image="https://images.pexels.com/photos/5721337/pexels-photo-5721337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Água potável e saneamento"
+          image="https://images.pexels.com/photos/2837863/pexels-photo-2837863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Energia limpa e acessível"
+          image="https://images.pexels.com/photos/3651820/pexels-photo-3651820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Crescimento economico"
+          image="https://images.pexels.com/photos/7567529/pexels-photo-7567529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Indústria, inovação e infraestrutura"
+          image="https://images.pexels.com/photos/1716008/pexels-photo-1716008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Redução da desigualdade"
+          image="https://images.pexels.com/photos/13798215/pexels-photo-13798215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Cidades sustentáveis"
+          image="https://images.pexels.com/photos/2071216/pexels-photo-2071216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Consumo responsável"
+          image="https://images.pexels.com/photos/1933386/pexels-photo-1933386.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Combate à mudança climática"
+          image="https://images.pexels.com/photos/3044473/pexels-photo-3044473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Vida na água"
+          image="https://images.pexels.com/photos/1894346/pexels-photo-1894346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Vida terrestre"
+          image="https://images.pexels.com/photos/2078772/pexels-photo-2078772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Paz e justiça"
+          image="https://images.pexels.com/photos/8111818/pexels-photo-8111818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          :numberOfProjects="8"
+        />
+        <ODSItem
+          title="Parcerias"
+          image="https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          :numberOfProjects="8"
+        />
       </div>
     </div>
   </section>
+  <FooterComponent />
 </template>
+
+<script lang="ts">
+import ODSItem from "../components/ODSItem.vue";
+import FooterComponent from "@/components/Footer.vue";
+
+export default {
+  name: "LandingPage",
+
+  components: {
+    ODSItem,
+    FooterComponent,
+  },
+};
+</script>
+
 <style scoped>
 .wrapper {
   display: flex;
@@ -121,6 +213,7 @@ section {
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+  gap: 5rem;
 }
 
 .logo-area {
@@ -130,12 +223,14 @@ section {
   justify-content: center;
   background-image: url("../assets/elipse-welcome.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: 50% 0;
-  height: 335px;
+  height: 250px;
 }
 
 .logo-area img {
   margin-bottom: 5rem;
+  transform: scale(0.8);
 }
 
 .content {
@@ -150,7 +245,7 @@ section {
 }
 
 .image {
-  width: 56rem;
+  width: 50%;
   height: 30rem;
   border-radius: 2rem;
   overflow: hidden;
@@ -158,7 +253,6 @@ section {
   background-repeat: no-repeat;
   border: 2px solid var(--brand-blue);
   transition: 0.5s;
-  background-image: url("../assets/fecomercio1.jpg");
 }
 
 .image:hover {
@@ -175,7 +269,28 @@ section {
 
 .image img {
   max-width: 100%;
-  max-height: 100%;
+}
+
+.landing-img {
+  border-radius: 1rem;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  border: 2px solid var(--brand-blue);
+  transition: 0.5s;
+  width: 70%;
+  height: 44.2rem;
+  margin-right: -20%;
+  /* background-color: black; */
+}
+
+.landing-img .video {
+  max-width: 100%;
+  transition: 0.5s;
+}
+
+.landing-img:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 .text {
@@ -276,6 +391,8 @@ h1 {
 
 #ods {
   padding-block: 8rem;
+  height: fit-content;
+  padding-bottom: 5rem;
 }
 
 #ods p {
@@ -291,14 +408,3 @@ h1 {
   gap: 2.4rem;
 }
 </style>
-<script lang="ts">
-import ODSItem from "../components/ODSItem.vue";
-
-export default {
-  name: "LandingPage",
-
-  components: {
-    ODSItem,
-  },
-};
-</script>

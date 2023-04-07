@@ -18,7 +18,7 @@ button, textarea, input {
 
 :root {
   --brand-blue: #0C4D8A;
-  --brand-orange: #F38D04;
+  --brand-orange: #f39f04;
 
   --title: #101010;
   --paragraph: #2B2B2B;
@@ -36,6 +36,7 @@ html {
   font-size: 62.5%;
   line-height: 1.6;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -50,8 +51,8 @@ h2 {
 }
 
 .wrapper {
-  width: 100%;
-  max-width: 112rem;
+  width: 112rem;
+  max-width: 80%;
   margin: 0 auto;
 }
 </style>

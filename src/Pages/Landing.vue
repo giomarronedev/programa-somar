@@ -1,10 +1,19 @@
 <template>
+  <header>
+      <div class="wrapper">
+        <img src="../assets/somar-logo.svg" alt="" />
+        <ul>
+          <a href="#welcome"><li>Início</li></a>
+          <a href="#projects-data"><li>Impacto</li></a>
+          <a href="#ods"><li>O que são ODS?</li></a>
+        </ul>
+      </div>
+    </header>
   <section id="welcome">
     <div class="wrapper">
       <div class="welcome-content">
-        <div class="logo-area">
-          <img src="../assets/somar-logo.svg" alt="" />
-        </div>
+        <!-- <div class="logo-area">
+        </div> -->
         <section class="content">
           <div class="text welcome-txt">
             <h1>
@@ -20,7 +29,6 @@
             </p>
           </div>
           <div class="landing-img right-blue">
-            <!-- <img src="../assets/fecomercio1.jpg" alt=""> -->
             <video class="video" autoplay loop muted>
               <source src="../assets/video-senac.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -209,6 +217,7 @@ section {
 }
 
 .welcome-content {
+  margin-top: 15rem;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -231,6 +240,54 @@ section {
 .logo-area img {
   margin-bottom: 5rem;
   transform: scale(0.8);
+}
+
+header {
+  min-height: 9rem;
+  background-color: white;
+  border-bottom: 3px solid var(--brand-blue);
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+}
+
+header .wrapper {
+  flex-direction: row;
+  background-color: antiquewhite;
+  height: 
+}
+
+header img {
+  width: 20rem;
+  margin-right: 5rem;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul a {
+  display: flex;
+  text-decoration: none;
+  color: var(--title);
+  height: 100%;
+}
+header ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  padding: 0 5rem;
+  margin-bottom: -3px;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
+} 
+
+header ul li:hover {
+  color: var(--brand-blue);
+  border-bottom: 3px solid var(--brand-orange);
+  background-color: rgba(12, 77, 138, .2);
+
 }
 
 .content {
@@ -280,7 +337,6 @@ section {
   width: 70%;
   height: 44.2rem;
   margin-right: -20%;
-  /* background-color: black; */
 }
 
 .landing-img .video {

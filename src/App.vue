@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <LandingPage />
+    <RouterView />
   </div>
 </template>
 
@@ -14,6 +14,10 @@
 
 button, textarea, input {
   font-family: 'Poppins', sans-serif;
+}
+
+button {
+  cursor: pointer;
 }
 
 :root {
@@ -35,6 +39,7 @@ p {
 html {
   font-size: 62.5%;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 #app {
@@ -59,10 +64,10 @@ h2 {
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import LandingPage from "./Pages/Landing.vue";
+// import LandingPage from "./Pages/Landing.vue";
 
 export default defineComponent({
     name: "App",
-    components: { LandingPage }
+    // components: { LandingPage }
 });
 </script>

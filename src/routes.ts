@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import LandingPage from './Pages/Landing.vue'
 import LoginPage from './Pages/Login.vue'
+import ChoicePage from './Pages/Choice.vue'
 
 const routes = [
     {
@@ -12,6 +13,11 @@ const routes = [
       path: "/login",
       name: "Login",
       component: LoginPage,
+    },
+    {
+      path: "/escolha",
+      name: "Choice",
+      component: ChoicePage,
     },
   ];
 

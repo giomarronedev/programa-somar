@@ -1,4 +1,5 @@
 # Programa Somar
+<<<<<<< HEAD
 
 ## Grupo Soma Tech
 
@@ -7,6 +8,8 @@ Integrantes  | Funções
 Giovanne Marrone  | Front-end
 Djênifer Gurskas  | Back-End
 Giovane de Melo  | U.I.
+=======
+>>>>>>> feat/landing-page
 
 ## Project setup
 ```

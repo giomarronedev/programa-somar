@@ -33,6 +33,9 @@
               todos os projetos de cada unidade do Sesc ou Senac e poderá
               conferir quais ODS eles atendem.
             </p>
+            <RouterLink to="/escolha">
+              <button class="button">Venha somar!</button>
+            </RouterLink>
           </div>
           <div class="landing-img right-blue">
             <video class="video" autoplay loop muted>
@@ -411,6 +414,24 @@ header button:hover .user-icon {
 
 .welcome-txt {
   width: 48rem;
+}
+
+.button {
+  background-color: transparent;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border: 2px solid var(--brand-blue);
+  border-radius: 1rem;
+  color: var(--brand-blue);
+  font-size: 1.6rem;
+  transition: .3s;
+}
+
+.button:hover {
+  background-color: var(--brand-blue);
+  color: white;
+  padding: 1rem 4rem;
+  box-shadow: -5px 5px 0px var(--brand-blue-light);
 }
 
 h1 {

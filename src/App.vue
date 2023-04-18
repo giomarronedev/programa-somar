@@ -22,6 +22,7 @@ button {
 
 :root {
   --brand-blue: #0C4D8A;
+  --brand-blue-light: #6591b9;
   --brand-orange: #f39f04;
 
   --title: #101010;

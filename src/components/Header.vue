@@ -3,14 +3,16 @@
     <div class="wrapper">
       <a href="https://www.fecomercio-rs.org.br/home" target="_blank">
         <button class="fecomercio-btn">
-            <img src="../assets/fecomercio-logo.svg" alt="Fecomércio" />
+          <img src="../assets/fecomercio-logo.svg" alt="Fecomércio" />
         </button>
       </a>
       <img class="logo" src="../assets/somar-logo.svg" alt="" />
-      <button class="login">
-        <font-awesome-icon icon="fa-solid fa-user" class="user-icon fa-lg" />
-        login
-      </button>
+      <RouterLink to="/login">
+        <button class="login">
+          <font-awesome-icon icon="fa-solid fa-user" class="user-icon fa-lg" />
+          login
+        </button>
+      </RouterLink>
     </div>
   </header>
 </template>
@@ -54,6 +56,10 @@ button img {
   width: 18rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .login {
   padding: 0rem 4rem;
   display: flex;
@@ -65,8 +71,8 @@ button img {
 }
 
 .login:hover {
-    background-color: var(--brand-blue);
-    color: white;
-    border-bottom: 3px solid var(--brand-blue);
+  background-color: var(--brand-blue);
+  color: white;
+  border-bottom: 3px solid var(--brand-blue);
 }
 </style>

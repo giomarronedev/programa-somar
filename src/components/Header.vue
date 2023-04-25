@@ -24,7 +24,7 @@ export default {
 <style scoped>
 header {
   background-color: white;
-  height: 11rem;
+  height: 10rem;
   border-bottom: 3px solid var(--brand-blue);
 }
 
@@ -39,7 +39,7 @@ header .wrapper {
 }
 
 button {
-  height: 11rem;
+  height: 10rem;
   background-color: transparent;
   border: 0;
   transition: 0.3s;

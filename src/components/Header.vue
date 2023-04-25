@@ -6,7 +6,9 @@
           <img src="../assets/fecomercio-logo.svg" alt="Fecomércio" />
         </button>
       </a>
-      <img class="logo" src="../assets/somar-logo.svg" alt="" />
+      <RouterLink to="/">
+        <img class="logo" src="../assets/somar-logo.svg" alt="" />
+      </RouterLink>
       <RouterLink to="/login">
         <button class="login">
           <font-awesome-icon icon="fa-solid fa-user" class="user-icon fa-lg" />

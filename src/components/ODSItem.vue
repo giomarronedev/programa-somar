@@ -1,14 +1,14 @@
 <template>
-  <div class="ods" :class="color">
-    <div class="number-of-projects">
-      <p class="number">{{ numberOfProjects }}</p>
-      <p>projetos</p>
+    <div class="ods" :class="color">
+      <div class="number-of-projects">
+        <p class="number">{{ numberOfProjects }}</p>
+        <p>projetos</p>
+      </div>
+      <img :src="image" :alt="alt" />
+      <div class="text">
+        <p>{{ title }}</p>
+      </div>
     </div>
-    <img :src="image" :alt="alt" />
-    <div class="text">
-      <p>{{ title }}</p>
-    </div>
-  </div>
 </template>
 
 <script lang="ts">
@@ -33,7 +33,7 @@ export default {
     },
     color: {
       type: String,
-      require: false
+      require: false,
     }
   },
 };
@@ -62,7 +62,7 @@ img {
   z-index: -1;
   top: -3.5rem;
   background-size: cover;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .ods:hover img {
@@ -87,18 +87,19 @@ img {
   left: 0;
   text-align: center;
 
-  padding: 0rem .5rem;
+  padding: 0rem 0.5rem;
 }
 
 .number-of-projects {
   position: absolute;
-  right: -8.5rem;
+  right: -9rem;
   background-color: var(--brand-blue);
   padding: 0.5rem 2rem;
   border-bottom-left-radius: 6rem;
-  transition: .3s;
+  transition: 0.3s;
   display: flex;
   gap: 1rem;
+  font-weight: 800;
 }
 
 .ods:hover .number-of-projects {

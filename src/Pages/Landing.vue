@@ -34,7 +34,7 @@
               conferir quais ODS eles atendem.
             </p>
             <RouterLink to="/escolha">
-              <button class="button">Venha somar!</button>
+              <button class="button">Conheça nossos projetos!</button>
             </RouterLink>
           </div>
           <div class="landing-img right-blue">

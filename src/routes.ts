@@ -3,6 +3,7 @@ import LandingPage from './Pages/Landing.vue'
 import LoginPage from './Pages/Login.vue'
 import ChoicePage from './Pages/Choice.vue'
 import ODSPage from './Pages/Ods.vue'
+import ProjectsPage from './Pages/Projects.vue'
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
       path: "/ods",
       name: "ODS",
       component: ODSPage,
+    },
+    {
+      path: "/projects",
+      name: "Projects",
+      component: ProjectsPage,
     },
   ];
 

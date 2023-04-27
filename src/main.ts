@@ -8,10 +8,10 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* import specific icons */
-import { faArrowLeft, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesDown, faArrowLeft, faLocationDot, faUser } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
-library.add(faUser, faArrowLeft);
+library.add(faUser, faArrowLeft, faLocationDot, faAnglesDown);
 
 createApp(App)
 .use(router)

@@ -1,14 +1,14 @@
 <template>
-    <div class="ods" :class="color">
-      <div class="number-of-projects">
-        <p class="number">{{ numberOfProjects }}</p>
-        <p>projetos</p>
-      </div>
-      <img :src="image" :alt="alt" />
-      <div class="text">
-        <p>{{ title }}</p>
-      </div>
+  <div class="ods" :class="color">
+    <div class="number-of-projects">
+      <p class="number">{{ numberOfProjects }}</p>
+      <p>projetos</p>
     </div>
+    <img :src="image" :alt="alt" />
+    <div class="text">
+      <p>{{ title }}</p>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -34,7 +34,7 @@ export default {
     color: {
       type: String,
       require: false,
-    }
+    },
   },
 };
 </script>

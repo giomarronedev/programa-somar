@@ -1,13 +1,15 @@
 <template>
-  <div class="item">
-    <img :src="image" alt="" />
-    <main class="card">
-      <div class="text">
-        <h3>{{ title }}</h3>
-        <p>{{ description }}</p>
-      </div>
-    </main>
-  </div>
+  <RouterLink to="/project">
+    <div class="item">
+      <img :src="image" alt="" />
+      <main class="card">
+        <div class="text">
+          <h3>{{ title }}</h3>
+          <p>{{ description }}</p>
+        </div>
+      </main>
+    </div>
+  </RouterLink>
 </template>
 
 <script lang="ts">
@@ -60,6 +62,7 @@ export default {
   border: 2px solid var(--brand-orange);
   transform: translateX(2rem);
   box-shadow: 0px 0px 2rem var(--brand-orange);
+  background-color: var(--brand-orange);
 }
 
 .text {
@@ -79,6 +82,7 @@ img {
 .item:hover img {
   box-shadow: 0px 0px 2rem var(--brand-orange);
   border: 3px solid var(--brand-orange);
+  transform: scale(.95);
 }
 
 h3 {
@@ -88,5 +92,9 @@ h3 {
 p {
   font-size: 1.6rem;
   width: 80%;
+}
+
+a {
+  text-decoration: none;
 }
 </style>

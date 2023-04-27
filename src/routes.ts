@@ -4,6 +4,7 @@ import LoginPage from './Pages/Login.vue'
 import ChoicePage from './Pages/Choice.vue'
 import ODSPage from './Pages/Ods.vue'
 import ProjectsPage from './Pages/Projects.vue'
+import ProjectPage from './Pages/Project.vue'
 
 const routes = [
     {
@@ -30,6 +31,11 @@ const routes = [
       path: "/projects",
       name: "Projects",
       component: ProjectsPage,
+    },
+    {
+      path: "/project",
+      name: "Project",
+      component: ProjectPage,
     },
   ];
 

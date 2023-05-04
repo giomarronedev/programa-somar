@@ -68,7 +68,7 @@
         </a>
       </div>
     </section>
-    <section class="section orange-bg" id="ods">
+    <section class="section" id="ods">
       <div class="wrapper">
         <h2>ODS para os quais esse projeto contrbui</h2>
         <div class="ods-area">
@@ -105,17 +105,21 @@
         </a>
       </div>
     </section>
+    <FooterComponent />
   </div>
 </template>
 <script lang="ts">
 import HeaderComponent from "../components/Header.vue";
 import ODSItem from "../components/ODSItem.vue";
+import FooterComponent from "../components/Footer.vue"; 
+
 export default {
   name: "ProjectPage",
 
   components: {
     HeaderComponent,
     ODSItem,
+    FooterComponent
   },
 };
 </script>
@@ -211,15 +215,6 @@ h2 {
     45deg,
     rgb(3, 34, 63) 0%,
     rgba(12, 77, 138, 1) 100%
-  );
-}
-
-.orange-bg {
-  background: rgb(176, 117, 9);
-  background: linear-gradient(
-    40deg,
-    rgba(176, 117, 9, 1) 0%,
-    rgba(255, 195, 85, 1) 100%
   );
 }
 

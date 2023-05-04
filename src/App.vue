@@ -24,6 +24,7 @@ button {
   --brand-blue: #0C4D8A;
   --brand-blue-light: #6591b9;
   --brand-orange: #f39f04;
+  --brand-orange-light: #fcb42e;
 
   --title: #101010;
   --paragraph: #2B2B2B;

@@ -33,8 +33,8 @@ export default {
     },
     color: {
       type: String,
-      require: false
-    }
+      require: false,
+    },
   },
 };
 </script>
@@ -62,7 +62,7 @@ img {
   z-index: -1;
   top: -3.5rem;
   background-size: cover;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .ods:hover img {
@@ -87,18 +87,19 @@ img {
   left: 0;
   text-align: center;
 
-  padding: 0rem .5rem;
+  padding: 0rem 0.5rem;
 }
 
 .number-of-projects {
   position: absolute;
-  right: -8.5rem;
+  right: -9rem;
   background-color: var(--brand-blue);
   padding: 0.5rem 2rem;
   border-bottom-left-radius: 6rem;
-  transition: .3s;
+  transition: 0.3s;
   display: flex;
   gap: 1rem;
+  font-weight: 800;
 }
 
 .ods:hover .number-of-projects {

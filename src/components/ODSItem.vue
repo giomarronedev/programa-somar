@@ -5,9 +5,9 @@
       <p>projetos</p>
     </div>
     <img :src="image" :alt="alt" />
-    <div class="text">
+    <!-- <div class="text">
       <p>{{ title }}</p>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -60,13 +60,12 @@ img {
   max-width: 100%;
   position: absolute;
   z-index: -1;
-  top: -3.5rem;
   background-size: cover;
   transition: 0.3s;
 }
 
 .ods:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .ods p {
@@ -92,10 +91,14 @@ img {
 
 .number-of-projects {
   position: absolute;
-  right: -9rem;
-  background-color: var(--brand-blue);
+  bottom: -3rem;
+  /* left: 2.3rem; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
   padding: 0.5rem 2rem;
-  border-bottom-left-radius: 6rem;
   transition: 0.3s;
   display: flex;
   gap: 1rem;
@@ -103,140 +106,89 @@ img {
 }
 
 .ods:hover .number-of-projects {
-  background-color: var(--brand-orange);
-  right: 0rem;
+  background-color: rgba(0, 0, 0, .5);
+  bottom: 0rem;
 }
 
 .magenta:hover {
   border: 2px solid rgb(255, 0, 76);
   box-shadow: 0px 0px 30px rgb(255, 0, 76);
 }
-.magenta:hover .number-of-projects {
-  background-color: rgb(255, 0, 76);
-}
 
 .yellow1:hover {
   border: 2px solid rgb(211, 201, 68);
   box-shadow: 0px 0px 30px rgb(211, 201, 68);
-}
-.yellow1:hover .number-of-projects {
-  background-color: rgb(211, 201, 68);
 }
 
 .green1:hover {
   border: 2px solid rgb(41, 150, 50);
   box-shadow: 0px 0px 30px rgb(41, 150, 50);
 }
-.green1:hover .number-of-projects {
-  background-color: rgb(41, 150, 50);
-}
+
 
 .red1:hover {
   border: 2px solid rgb(199, 16, 16);
   box-shadow: 0px 0px 30px rgb(199, 16, 16);
 }
-.red1:hover .number-of-projects {
-  background-color: rgb(199, 16, 16);
-}
-
 .orange1:hover {
   border: 2px solid rgb(255, 60, 0);
   box-shadow: 0px 0px 30px rgb(255, 60, 0);
-}
-.orange1:hover .number-of-projects {
-  background-color: rgb(255, 60, 0);
 }
 
 .blue1:hover {
   border: 2px solid rgb(0, 178, 223);
   box-shadow: 0px 0px 30px rgb(0, 178, 223);
 }
-.blue1:hover .number-of-projects {
-  background-color: rgb(0, 178, 223);
-}
 
 .yellow2:hover {
   border: 2px solid rgb(184, 181, 46);
   box-shadow: 0px 0px 30px rgb(184, 181, 46);
-}
-.yellow2:hover .number-of-projects {
-  background-color: rgb(184, 181, 46);
 }
 
 .red2:hover {
   border: 2px solid rgb(124, 17, 53);
   box-shadow: 0px 0px 30px rgb(124, 17, 53);
 }
-.red2:hover .number-of-projects {
-  background-color: rgb(124, 17, 53);
-}
 
 .orange2:hover {
   border: 2px solid rgb(228, 122, 23);
   box-shadow: 0px 0px 30px rgb(228, 122, 23);
-}
-.orange2:hover .number-of-projects {
-  background-color: rgb(228, 122, 23);
 }
 
 .pink:hover {
   border: 2px solid rgb(255, 0, 170);
   box-shadow: 0px 0px 30px rgb(255, 0, 170);
 }
-.pink:hover .number-of-projects {
-  background-color: rgb(255, 0, 170);
-}
 
 .orange3:hover {
   border: 2px solid rgb(240, 184, 64);
   box-shadow: 0px 0px 30px rgb(240, 184, 64);
-}
-.orange3:hover .number-of-projects {
-  background-color: rgb(240, 184, 64);
 }
 
 .yellow3:hover {
   border: 2px solid rgb(153, 143, 8);
   box-shadow: 0px 0px 30px rgb(153, 143, 8);
 }
-.yellow3:hover .number-of-projects {
-  background-color: rgb(153, 143, 8);
-}
 
 .green2:hover {
   border: 2px solid rgb(55, 148, 70);
   box-shadow: 0px 0px 30px rgb(55, 148, 70);
-}
-.green2:hover .number-of-projects {
-  background-color: rgb(55, 148, 70);
 }
 
 .blue2:hover {
   border: 2px solid rgb(67, 181, 216);
   box-shadow: 0px 0px 30px rgb(67, 181, 216);
 }
-.blue2:hover .number-of-projects {
-  background-color: rgb(67, 181, 216);
-}
 .green3:hover {
   border: 2px solid rgb(101, 207, 92);
   box-shadow: 0px 0px 30px rgb(101, 207, 92);
-}
-.green3:hover .number-of-projects {
-  background-color: rgb(101, 207, 92);
 }
 .blue3:hover {
   border: 2px solid rgb(36, 130, 207);
   box-shadow: 0px 0px 30px rgb(36, 130, 207);
 }
-.blue3:hover .number-of-projects {
-  background-color: rgb(36, 130, 207);
-}
 .blue4:hover {
   border: 2px solid rgb(36, 88, 131);
   box-shadow: 0px 0px 30px rgb(36, 88, 131);
-}
-.blue4:hover .number-of-projects {
-  background-color: rgb(36, 88, 131);
 }
 </style>

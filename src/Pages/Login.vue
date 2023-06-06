@@ -24,7 +24,9 @@
             </div>
           </div>
           <a href="#">Esqueci minha senha...</a>
-          <button>Entrar</button>
+          <RouterLink class="login-btn" to="/somar-admin">
+            <button>Entrar</button>
+          </RouterLink>
         </form>
       </div>
     </div>
@@ -159,8 +161,12 @@ form button {
   color: var(--brand-blue);
   transition: 0.2s;
   font-weight: 800;
-
   margin-top: 3rem;
+  width: 100%;
+}
+
+form .login-btn {
+  width: 100%;
 }
 
 form button:hover {

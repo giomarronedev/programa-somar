@@ -5,6 +5,7 @@ import ChoicePage from './Pages/Choice.vue'
 import ODSPage from './Pages/Ods.vue'
 import ProjectsPage from './Pages/Projects.vue'
 import ProjectPage from './Pages/Project.vue'
+import SomarAdmin from './Pages/Admin.vue'
 
 const routes = [
     {
@@ -16,6 +17,11 @@ const routes = [
       path: "/login",
       name: "Login",
       component: LoginPage,
+    },
+    {
+      path: "/somar-admin",
+      name: "Admin",
+      component: SomarAdmin,
     },
     {
       path: "/escolha",

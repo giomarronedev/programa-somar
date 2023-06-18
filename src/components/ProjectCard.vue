@@ -15,7 +15,6 @@
 <script lang="ts">
 export default {
   name: "ProjectCard",
-
   props: {
     title: {
       type: String,

@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mysql2');
 
 const userSchema = new Schema({
   googleId: {
